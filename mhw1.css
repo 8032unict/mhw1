@@ -1,0 +1,174 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    max-width: 780px;
+    z-index: 1;
+}
+
+header {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/ea/Valle_y_cielo.JPG);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay {
+    position: absolute; 
+    width: 100%; 
+    height: 500px; 
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 0; 
+  }
+/*questa cosa poi la fai con media per i dispositivi*/
+
+header nav{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right:  10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+#propic {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+
+
+
+
+}
+
+
+#updates{
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    line-height: normal;
+    display: flex;
+    position: absolute;
+    top: 130px;
+}
+#namepic{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+#navbar{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    
+}
+
+#navbar a  {
+    color:whitesmoke;
+}
+
+#navbar a:hover {
+    color:burlywood;
+}
+
+
+
+#marginBLUE {
+    height: 60px;
+    width: 40px;
+}
+
+
+footer {
+    background-color: rgba(0,0,0,1);
+    height: 100px;
+}
+
+footer h2 {
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:  relative;
+    top:10px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    
+
+}
+
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.67%;
+    font-size: 40px;
+}
+
+.element{
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    color:rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: .5em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.mark{
+    font-style: italic;
+    color: gray;
+}
+
+.number{
+    font-size: inherit;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    color:rgba(0,0,0,0.7);
+    position: absolute;
+    top:  -40px;
+    bottom: 0px;
+    left: -80px;
+    right:  0px;
+}
+
+@media (max-width: 700px) {
+    .number{
+            font-size: inherit;
+            font-weight: bold;
+            font-family: 'Roboto',sans-serif;
+            color:rgba(0,0,0,0.7);
+            position: absolute;
+            top:  -40px;
+            bottom: 0px;
+            left: -40px;
+            right:  0px;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.imgbox{
+    margin-bottom: 120px;
+}
