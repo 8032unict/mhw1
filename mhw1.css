@@ -12,9 +12,9 @@ header {
     width: 100%;
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: static;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -34,11 +34,71 @@ header nav{
     left: 0;
     bottom: 0;
     right:  10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-align: end;
 
+}
+
+#menu{
+    display:none;
+}
+
+#lines .line{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+}
+
+@media (max-width: 700px){
+    header nav{
+        display: none;
+    }
+
+    #menu{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        top: 10px;
+        left: 10px;
+    }
+
+    #menu:hover{
+        background-color: black;
+        padding: 10px;
+        top:0px;
+        left: 0px;
+    }   
+    
+    .line{
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 2.5px 0;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-align: center;
+        max-width: 780px;
+        z-index: 1;
+        font-size: 22.5px; /*perchè è il mio numero preferito*/
+    }
+
+    .number{
+        font-size: inherit;
+        font-weight: bold;
+        font-family: 'Roboto',sans-serif;
+        color:rgba(0,0,0,0.7);
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+#space{
+    height: 60px;
 }
 
 #propic {
@@ -46,11 +106,8 @@ header nav{
     flex-direction:column;
     align-items: center;
     position: relative;
-    bottom: 60px;
-
-
-
-
+    margin-top:-70px;
+    height: max-content;
 }
 
 
@@ -58,36 +115,23 @@ header nav{
     font-style: italic;
     font-family: 'Lato', sans-serif;
     line-height: normal;
-    display: flex;
-    position: absolute;
-    top: 130px;
     color: lightblue;
 }
+
 #namepic{
     display: flex;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
-#navbar{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    
-}
 
-#navbar a  {
+nav a  {
     color:whitesmoke;
 }
 
-#navbar a:hover {
+nav a:hover {
     color:burlywood;
 }
 
-
-
-#marginBLUE {
-    height: 60px;
-    width: 40px;
-}
 
 
 footer {
@@ -115,18 +159,25 @@ footer h2 {
     margin-right: auto;
     width: 66.67%;
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
+
 .element{
-    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    height:max-content;
     font-weight: bold;
     font-family: 'Roboto',sans-serif;
     color:rgba(0,0,0,0.7);
-    margin-bottom: 20px;
 }
 
 .text{
@@ -146,26 +197,12 @@ footer h2 {
     font-weight: bold;
     font-family: 'Roboto',sans-serif;
     color:rgba(0,0,0,0.7);
-    position: absolute;
-    top:  -40px;
-    bottom: 0px;
-    left: -80px;
-    right:  0px;
+    margin-right: 40px;
+    margin-left: -70px;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (max-width: 700px) {
-    .number{
-            font-size: inherit;
-            font-weight: bold;
-            font-family: 'Roboto',sans-serif;
-            color:rgba(0,0,0,0.7);
-            position: absolute;
-            top:  -40px;
-            bottom: 0px;
-            left: -40px;
-            right:  0px;
-    }
-}
 
 body{
     margin: 0;
