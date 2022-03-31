@@ -208,11 +208,9 @@ body{
     margin: 0;
 }
 
-.imgbox{
-    margin-bottom: 120px;
-}
 
 .content{
     border-left: 1px solid black;
     padding-left: 10px;
+    margin-bottom: 120px;
 }
